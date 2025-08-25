@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Visor 3D — Medusa</title>
+  <!-- Librería Model Viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    model-viewer {
+      width: 80vw;
+      height: 80vh;
+      background: #000;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer src="scene.gltf"
+                alt="Modelo 3D de Medusa"
+                auto-rotate
+                camera-controls
+                shadow-intensity="1"
+                exposure="1"
+                ar>
+  </model-viewer>
+
+  <footer style="position: fixed; bottom: 10px; width: 100%; text-align: center; font-size: 0.8rem; color: #aaa;">
+    Basado en <a href="https://sketchfab.com/3d-models/nyssira-medusa-f0834c3c978a4096a75b829cc5729664" target="_blank" style="color:#0ff;">Nyssira - Medusa</a> 
+    por <a href="https://sketchfab.com/CMBC" target="_blank" style="color:#0ff;">Brian Trepanier</a>, licenciado bajo 
+    <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" style="color:#0ff;">CC-BY-4.0</a>.
+  </footer>
+</body>
+</html>
